@@ -1,0 +1,3 @@
+/home/mariushzh/Documents/parallel_computing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mariushzh/Documents/parallel_computing/cmake-build-debug/CMakeFiles/parallel_computing.dir
+/home/mariushzh/Documents/parallel_computing/cmake-build-debug/CMakeFiles/edit_cache.dir

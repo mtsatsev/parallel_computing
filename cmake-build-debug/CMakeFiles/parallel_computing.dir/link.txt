@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/parallel_computing.dir/main.c.o  -o parallel_computing 
