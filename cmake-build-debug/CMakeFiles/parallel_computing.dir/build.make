@@ -57,27 +57,27 @@ include CMakeFiles/parallel_computing.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/parallel_computing.dir/flags.make
 
-CMakeFiles/parallel_computing.dir/main.c.o: CMakeFiles/parallel_computing.dir/flags.make
-CMakeFiles/parallel_computing.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mariushzh/Documents/parallel_computing/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/parallel_computing.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parallel_computing.dir/main.c.o   -c /home/mariushzh/Documents/parallel_computing/main.c
+CMakeFiles/parallel_computing.dir/relax.c.o: CMakeFiles/parallel_computing.dir/flags.make
+CMakeFiles/parallel_computing.dir/relax.c.o: ../relax.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mariushzh/Documents/parallel_computing/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/parallel_computing.dir/relax.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/parallel_computing.dir/relax.c.o   -c /home/mariushzh/Documents/parallel_computing/relax.c
 
-CMakeFiles/parallel_computing.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parallel_computing.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariushzh/Documents/parallel_computing/main.c > CMakeFiles/parallel_computing.dir/main.c.i
+CMakeFiles/parallel_computing.dir/relax.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/parallel_computing.dir/relax.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariushzh/Documents/parallel_computing/relax.c > CMakeFiles/parallel_computing.dir/relax.c.i
 
-CMakeFiles/parallel_computing.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parallel_computing.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariushzh/Documents/parallel_computing/main.c -o CMakeFiles/parallel_computing.dir/main.c.s
+CMakeFiles/parallel_computing.dir/relax.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/parallel_computing.dir/relax.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariushzh/Documents/parallel_computing/relax.c -o CMakeFiles/parallel_computing.dir/relax.c.s
 
 # Object files for target parallel_computing
 parallel_computing_OBJECTS = \
-"CMakeFiles/parallel_computing.dir/main.c.o"
+"CMakeFiles/parallel_computing.dir/relax.c.o"
 
 # External object files for target parallel_computing
 parallel_computing_EXTERNAL_OBJECTS =
 
-parallel_computing: CMakeFiles/parallel_computing.dir/main.c.o
+parallel_computing: CMakeFiles/parallel_computing.dir/relax.c.o
 parallel_computing: CMakeFiles/parallel_computing.dir/build.make
 parallel_computing: CMakeFiles/parallel_computing.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mariushzh/Documents/parallel_computing/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable parallel_computing"

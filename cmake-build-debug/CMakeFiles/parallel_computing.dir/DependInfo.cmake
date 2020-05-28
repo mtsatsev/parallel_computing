@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/mariushzh/Documents/parallel_computing/main.c" "/home/mariushzh/Documents/parallel_computing/cmake-build-debug/CMakeFiles/parallel_computing.dir/main.c.o"
+  "/home/mariushzh/Documents/parallel_computing/relax.c" "/home/mariushzh/Documents/parallel_computing/cmake-build-debug/CMakeFiles/parallel_computing.dir/relax.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

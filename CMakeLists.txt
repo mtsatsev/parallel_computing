@@ -3,4 +3,4 @@ project(parallel_computing C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(parallel_computing main.c)
+add_executable(parallel_computing relax.c)

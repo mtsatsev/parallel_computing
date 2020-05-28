@@ -2,10 +2,12 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
+#include <omp.h>
 
 #define N 10000000   // length of the vectors
 #define EPS 0.1      // convergence criterium
 #define HEAT 100.0   // heat value on the boundary
+void print( double *out, int n);
 
 //
 // allocate a vector of length "n"
@@ -14,6 +16,10 @@ double *allocVector( int n)
 {
    double *v;
    v = (double *)malloc( n*sizeof(double));
+   if(v == NULL){
+       printf("Memmory allocation failed for allocVector");
+       exit(0);
+   }
    return v;
 }
 
@@ -23,12 +29,12 @@ double *allocVector( int n)
 void init( double *out, int n)
 {
    int i;
-
-   for( i=1; i<n; i++) {
-      out[i] = 0;
-   }
+   #pragma omp parallel for shared(out) private(i) schedule(static , 1)
+       for( i=1; i<n; i++) {
+#pragma omp critical
+           out[i] = 0;
+       }
    out[0] = HEAT;
-
 }
 
 //
@@ -53,9 +59,10 @@ void print( double *out, int n)
 void relax( double *in, double *out, int n)
 {
    int i;
-   for( i=1; i<n-1; i++) {
-      out[i] = 0.25*in[i-1] + 0.5*in[i] + 0.25*in[i+1];
-   }
+
+        for( i=1; i<n-1; i++) {
+            out[i] = 0.25*in[i-1] + 0.5*in[i] + 0.25*in[i+1];
+        }
 }
 
 //
@@ -80,10 +87,12 @@ int main()
    int iterations = 0;
 
    a = allocVector( N);
-   b = allocVector( N);
+    printf("first element %f",a[0]);
+
+    b = allocVector( N);
 
    init( a, N);
-   init( b, N);
+   //init( b, N);
 
    n = N;
 

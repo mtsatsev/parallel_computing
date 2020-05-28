@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/mariushzh/Documents/parallel_computing/main.c">
+		<Unit filename="/home/mariushzh/Documents/parallel_computing/relax.c">
 			<Option target="parallel_computing"/>
 		</Unit>
 		<Unit filename="/home/mariushzh/Documents/parallel_computing/CMakeLists.txt">

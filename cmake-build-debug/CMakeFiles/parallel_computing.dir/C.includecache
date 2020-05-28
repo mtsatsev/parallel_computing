@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/mariushzh/Documents/parallel_computing/main.c
+/home/mariushzh/Documents/parallel_computing/relax.c
+stdlib.h
+-
 stdio.h
+-
+stdbool.h
+-
+math.h
+-
+omp.h
 -
 

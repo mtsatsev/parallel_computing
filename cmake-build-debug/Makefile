@@ -123,32 +123,32 @@ parallel_computing/fast:
 	$(MAKE) -f CMakeFiles/parallel_computing.dir/build.make CMakeFiles/parallel_computing.dir/build
 .PHONY : parallel_computing/fast
 
-main.o: main.c.o
+relax.o: relax.c.o
 
-.PHONY : main.o
+.PHONY : relax.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/parallel_computing.dir/build.make CMakeFiles/parallel_computing.dir/main.c.o
-.PHONY : main.c.o
+relax.c.o:
+	$(MAKE) -f CMakeFiles/parallel_computing.dir/build.make CMakeFiles/parallel_computing.dir/relax.c.o
+.PHONY : relax.c.o
 
-main.i: main.c.i
+relax.i: relax.c.i
 
-.PHONY : main.i
+.PHONY : relax.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/parallel_computing.dir/build.make CMakeFiles/parallel_computing.dir/main.c.i
-.PHONY : main.c.i
+relax.c.i:
+	$(MAKE) -f CMakeFiles/parallel_computing.dir/build.make CMakeFiles/parallel_computing.dir/relax.c.i
+.PHONY : relax.c.i
 
-main.s: main.c.s
+relax.s: relax.c.s
 
-.PHONY : main.s
+.PHONY : relax.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/parallel_computing.dir/build.make CMakeFiles/parallel_computing.dir/main.c.s
-.PHONY : main.c.s
+relax.c.s:
+	$(MAKE) -f CMakeFiles/parallel_computing.dir/build.make CMakeFiles/parallel_computing.dir/relax.c.s
+.PHONY : relax.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... parallel_computing"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... relax.o"
+	@echo "... relax.i"
+	@echo "... relax.s"
 .PHONY : help
 
 

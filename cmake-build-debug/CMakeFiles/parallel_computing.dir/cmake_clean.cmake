@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/parallel_computing.dir/main.c.o"
+  "CMakeFiles/parallel_computing.dir/relax.c.o"
   "parallel_computing"
   "parallel_computing.pdb"
 )
